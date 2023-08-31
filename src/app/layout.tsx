@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Phudu } from "@next/font/google";
+import { Phudu } from "next/font/google";
 import { NavBar } from "./components/navBar";
 import { Footer } from "./components/footer";
 
