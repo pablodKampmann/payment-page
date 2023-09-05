@@ -1,10 +1,11 @@
 import React from 'react';
+import { Help } from "./components/help";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white relative">
       <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 p-4">
-        Confiabilidad y seguridad en cada compra ✓
+        Confiabilidad y seguridad en cada compra
       </h1>
       <hr className="border-t-2 border-gray-800 w-3/5 mx-auto my-4" />
 
@@ -14,7 +15,7 @@ export default function Home() {
         <div className="mt-6 overflow-x-auto flex">
 
 
-        <div className="group relative border border-gray-800 p-4 rounded-md mr-4">
+          <div className="group relative border border-gray-800 p-4 rounded-md mr-4">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
               <img src="/auri_prueba.jpg" alt="auri" className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
             </div>
@@ -172,7 +173,7 @@ export default function Home() {
         </div>
       </div>
 
-
+      <Help></Help>
     </div>
 
   );
