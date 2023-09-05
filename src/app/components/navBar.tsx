@@ -41,7 +41,7 @@ export function NavBar() {
     }
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 animate-slide-down">
+        <nav className=" border-gray-200 dark:bg-gray-900 animate-slide-down">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 animate-slide-down">
                 <button className={`flex items-center ${openCategories ? 'animate-rotate-180' : ''}`} onClick={HandleCategories}>
                     {animationFinished && openCategories ? (
