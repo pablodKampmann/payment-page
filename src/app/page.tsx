@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="bg-white relative">
       <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 p-4">
-        Confiabilidad y seguridad en cada compra
+        Confiabilidad y seguridad en cada compraa
       </h1>
       <hr className="border-t-2 border-gray-800 w-3/5 mx-auto my-4" />
       <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:max-w-7xl lg:px-8">
