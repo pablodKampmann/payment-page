@@ -11,21 +11,11 @@ import React, { useState, useEffect } from 'react';
 
 export function NavBar() {
     const [openCategories, setOpenCategories] = useState(false);
-    const [animationFinished, setAnimationFinished] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState('');
     const [selectedSubCategory, setSelectedSubCategory] = useState('');
 
-    useEffect(() => {
-        const animationTimeout = setTimeout(() => {
-            setAnimationFinished(true);
-        }, 200);
-
-        return () => clearTimeout(animationTimeout);
-    }, [openCategories]);
-
     function HandleCategories() {
         setOpenCategories(!openCategories);
-        setAnimationFinished(false);
     }
 
     useEffect(() => {
@@ -44,7 +34,7 @@ export function NavBar() {
         <nav className=" border-gray-200 dark:bg-gray-900 animate-slide-down">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 animate-slide-down">
                 <button className={`flex items-center ${openCategories ? 'animate-rotate-180' : ''}`} onClick={HandleCategories}>
-                    {animationFinished && openCategories ? (
+                    {openCategories ? (
                         <RxCross1 size={30} className="text-xl" />
                     ) : (
                         <BiCategoryAlt size={30} className="text-xl" />
